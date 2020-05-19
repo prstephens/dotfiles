@@ -174,8 +174,7 @@ label-dimmed-underline = ${root.background}
 label-focused = %icon%  %name%
 label-focused-foreground = #f3f3f3
 label-focused-background = #3f3f3f
-;label-focused-underline = #${colors.accent}
-label-focused-underline = #9f78e1
+label-focused-underline = ${colors.accent}
 label-focused-font = 4
 label-focused-padding = 4
 
