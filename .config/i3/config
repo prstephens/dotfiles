@@ -213,6 +213,7 @@ exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/f
 exec_always --no-startup-id setxkbmap -layout gb
 
 assign [class="Google-chrome"] $ws2
+assign [class="Code"] $ws3
 for_window [class="Spotify Premium"] move to workspace $ws3
 
 # load programs
@@ -220,3 +221,4 @@ exec --no-startup-id google-chrome-stable --app https://gmail.com
 exec --no-startup-id google-chrome-stable --app https://news.sky.com/
 exec --no-startup-id google-chrome-stable --app https://coinbase.com
 exec --no-startup-id spotify
+exec_always --no-startup-id code
