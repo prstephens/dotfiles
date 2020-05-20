@@ -4,14 +4,10 @@ accent = #ff79c6
 [bar/top]
 enable-ipc = true
 width = 100%
-height = 27
+height = 28
 
-;background = #222
 background = #aa1f1f1f
 foreground = #eee
-
-#border-bottom = 1
-#border-bottom-color = #333
 
 overline-size = 3
 overline-color = ${self.background}
@@ -23,7 +19,7 @@ padding-right = 0
 module-margin-left = 3
 module-margin-right = 3
 
-font-0 = NotoSans-Regular:size=8;0
+font-0 = SF Display Pro:size=10;0
 font-1 = MaterialIcons:size=10;2
 font-2 = Termsynu:size=8;0
 font-3 = Siji:pixelsize=10;1
@@ -31,51 +27,9 @@ font-4 = FontAwesome:size=10;0
 
 modules-left = powermenu i3
 modules-center = xwindow
-modules-right = wired-network clock
-
-wm-restack = bspwm
+modules-right = wired-network wireless-network clock
 
 tray-position = right
-
-[bar/bottom]
-bottom = true
-width = 100%
-height = 27
-
-background = #1c1c1c
-foreground = #eefafafa
-
-overline-size = 3
-overline-color = ${colors.accent}
-underline-size = 3
-underline-color = ${colors.accent}
-
-;border-color = #ff0000
-border-top = 3
-border-top-color = #3d3d3d
-;border-bottom = 0
-;border-bottom-color = #333333
-
-spacing = 3
-;padding-right = 4
-padding-left = 0
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 6
-
-font-0 = NotoSans-Regular:size=8;0
-font-1 = Unifont:size=5;0
-font-2 = FontAwesome:size=8;0
-font-3 = NotoSans-Regular:size=8;-1
-font-4 = Unifont:size=5;0
-font-5 = Termsynu:size=7;0
-
-modules-left = bspwm i3
-;modules-center =
-modules-right = xbacklight cpu memory clock
-;modules-right = memory
-
-wm-restack = bspwm
 
 [module/fs-root]
 type = internal/fs
@@ -118,45 +72,6 @@ ramp-foreground = #666
 interactive = true
 
 
-[module/bspwm]
-type = internal/bspwm
-format = <label-state> <label-mode>
-
-ws-icon-0 = term;
-ws-icon-1 = web;
-ws-icon-2 = code;
-ws-icon-3 = music;
-ws-icon-4 = irssi;
-ws-icon-default = 
-
-label-dimmed-underline = ${root.background}
-
-label-focused = %icon%  %name%
-label-focused-foreground = #f3f3f3
-label-focused-background = #3f3f3f
-;label-focused-underline = ${colors.accent}
-label-focused-underline = #9f78e1
-label-focused-font = 4
-label-focused-padding = 4
-
-label-occupied = %icon%  %name%
-label-occupied-underline = #555555
-label-occupied-font = 4
-label-occupied-padding = 4
-
-label-urgent = %icon%  %name%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-label-urgent-underline = #9b0a20
-label-urgent-font = 4
-label-urgent-padding = 4
-
-label-empty = %icon%  %name%
-label-empty-foreground = #55ffffff
-label-empty-font = 4
-label-empty-padding = 4
-
-
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -165,8 +80,7 @@ pin-workspaces = true
 ws-icon-0 = 1 term;
 ws-icon-1 = 2 web;
 ws-icon-2 = 3 code;
-ws-icon-3 = music;
-ws-icon-4 = irssi;
+ws-icon-3 = 4 music;
 ws-icon-default = 
 
 label-dimmed-underline = ${root.background}
@@ -271,12 +185,22 @@ label-connected =   %local_ip%
 label-disconnected = Ethernet disconnected
 label-disconnected-foreground = #66
 
+[module/wireless-network]
+type = internal/network
+interface = wlp2s0
+interval = 2.0
+udspeed-minwidth = 1
+accumulate-stats = true
+
+label-connected =   %local_ip%
+label-disconnected = NO WIFI
+label-disconnected-foreground = #66
+
 
 [module/clock]
 type = internal/date
 interval = 5
 format-padding = 5
-#format-background = #000
 format-foreground = #fff
 date = %%{F#bb}%d-%m-%Y%%{F-}  %%{F#ee}%H:%M%%{F-}
 
@@ -315,14 +239,13 @@ label-foreground = #bbb
 type = custom/menu
 
 format-padding = 3
-#format-background = #000
 format-foreground = #fff
 
 label-open = 
 label-close = 
-label-separator = " - "
+label-separator = "  |  "
 
-menu-0-0 = Terminate WM
+menu-0-0 = Logout
 menu-0-0-foreground = ${colors.accent}
 menu-0-0-exec = i3-msg exit
 menu-0-1 = Reboot
@@ -345,5 +268,3 @@ menu-2-0-exec = systemctl poweroff
 menu-2-1 = Cancel
 menu-2-1-foreground = ${colors.accent}
 menu-2-1-exec = menu-open-0
-
-; vim:ft=dosini
