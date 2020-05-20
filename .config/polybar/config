@@ -192,7 +192,7 @@ interval = 2.0
 udspeed-minwidth = 1
 accumulate-stats = true
 
-label-connected =   %local_ip%
+label-connected =   %local_ip%
 label-disconnected = NO WIFI
 label-disconnected-foreground = #66
 
