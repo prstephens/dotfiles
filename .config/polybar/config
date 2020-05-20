@@ -85,26 +85,26 @@ ws-icon-default = 
 
 label-dimmed-underline = ${root.background}
 
-label-focused = %icon%  %name%
+label-focused = %icon%  
 label-focused-foreground = #f3f3f3
 label-focused-background = #3f3f3f
 label-focused-underline = ${colors.accent}
 label-focused-font = 4
 label-focused-padding = 4
 
-label-unfocused = %icon%  %name%
+label-unfocused = %icon% 
 label-unfocused-underline = #555555
 label-unfocused-font = 4
 label-unfocused-padding = 4
 
-label-urgent = %icon%  %name%
+label-urgent = %icon% 
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
 label-urgent-underline = #9b0a20
 label-urgent-font = 4
 label-urgent-padding = 4
 
-label-visible = %icon%  %name%
+label-visible = %icon% 
 label-visible-foreground = #55ffffff
 label-visible-font = 4
 label-visible-padding = 4
