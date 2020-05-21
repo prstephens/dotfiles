@@ -27,7 +27,7 @@ font-4 = FontAwesome:size=12;0
 
 modules-left = powermenu i3
 modules-center = xwindow
-modules-right = vpn-openvpn-status clock
+modules-right = vpn-openvpn-status updates-aurhelper clock
 
 tray-position = right
 
@@ -41,6 +41,15 @@ type = custom/script
 exec = ~/.config/polybar/scripts/vpn-openvpn-status.sh
 interval = 5
 format-prefix = "   "
+label = %output%
+label-font = 4
+label-foreground = #99
+format-foreground = #99
+
+[module/updates-aurhelper]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-aurhelper.sh
+interval = 600
 label = %output%
 label-font = 4
 label-foreground = #99

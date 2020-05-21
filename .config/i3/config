@@ -174,10 +174,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 20
+gaps inner 10
 gaps outer 2
 smart_borders on
-smart_gaps on
 default_border pixel 2
 new_float pixel 
 new_window pixel 2
@@ -204,9 +203,9 @@ exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/f
 exec_always --no-startup-id setxkbmap -layout gb
 
 assign [class="Google-chrome"] $ws2
-assign [class="Code"] $ws3
-assign [class="Spotify Premium"] $ws4
-for_window [class="Spotify Premium"] move to workspace $ws4
+assign [class="Code-OSS"] $ws3
+assign [class="Spotify"] $ws4
+for_window [class="Spotify"] move to workspace $ws4
 
 # load programs
 exec --no-startup-id google-chrome-stable --app https://gmail.com
