@@ -6,7 +6,7 @@ enable-ipc = true
 width = 100%
 height = 28
 
-background = #aa1f1f1f
+background = #551f1f1f
 foreground = #eee
 
 overline-size = 3
@@ -23,11 +23,11 @@ font-0 = SF Display Pro:size=10;0
 font-1 = MaterialIcons:size=10;2
 font-2 = Termsynu:size=8;0
 font-3 = Siji:pixelsize=10;1
-font-4 = FontAwesome:size=10;0
+font-4 = FontAwesome:size=12;0
 
 modules-left = powermenu i3
 modules-center = xwindow
-modules-right = wired-network wireless-network clock
+modules-right = vpn-openvpn-status clock
 
 tray-position = right
 
@@ -36,40 +36,15 @@ type = internal/fs
 mount-0 = /
 label-mounted = %{F#e60053}%percentage_used%%%{F-} used of %mountpoint%
 
-
-[module/xbacklight]
-type = internal/xbacklight
-output = eDP-1
-format = <ramp> <bar>
-
-ramp-0 = 
-ramp-0-foreground = #666
-ramp-1 = 
-ramp-1-foreground = #999
-ramp-2 = 
-ramp-2-foreground = #fff
-
-bar-width = 12
-bar-indicator = |
-bar-indicator-font = 6
-bar-indicator-foreground = #bbffffff
-bar-fill = ─
-bar-fill-font = 6
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 6
-bar-empty-foreground = #44
-
-
-[module/backlight]
-type = internal/backlight
-card = intel_backlight
-format = <ramp> <label>
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = #666
-interactive = true
+[module/vpn-openvpn-status]
+type = custom/script
+exec = ~/.config/polybar/scripts/vpn-openvpn-status.sh
+interval = 5
+format-prefix = "   "
+label = %output%
+label-font = 4
+label-foreground = #99
+format-foreground = #99
 
 
 [module/i3]
@@ -173,7 +148,6 @@ bar-used-empty-foreground = ${colors.foreground-alt}
 ;bar-used-empty-foreground = #444444
 
 
-
 [module/wired-network]
 type = internal/network
 interface = enp7s0
@@ -184,6 +158,7 @@ accumulate-stats = true
 label-connected =   %local_ip%
 label-disconnected = Ethernet disconnected
 label-disconnected-foreground = #66
+
 
 [module/wireless-network]
 type = internal/network
