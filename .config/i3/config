@@ -191,12 +191,13 @@ new_window pixel 2
   client.background       #2B2C2B
 
 #load pretty stuff
-exec_always --no-startup-id conky
+#exec_always --no-startup-id conky
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
 # load config
-exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/anime/58090.jpg
+#58090
+exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/anime/1275086.jpg
 exec_always --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 240
 exec  --no-startup-id xscreensaver -no-splash
 exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
@@ -205,13 +206,15 @@ exec_always --no-startup-id setxkbmap -layout gb
 # assign apps to workspaces
 # run : xprop | grep -i 'class' to get class name of window
 assign [class="Google-chrome"] $ws2
+assign [class="firefox"] $ws2
 assign [class="code-oss"] $ws3
 assign [class="spotify"] $ws4
 for_window [class="spotify"] move window to $ws4
 
+
 # load programs
 exec --no-startup-id spotify --disable-accelerated-layers --disable-accelerated-fixed-root-background
 exec --no-startup-id google-chrome-stable --app https://gmail.com
-exec --no-startup-id google-chrome-stable --app https://news.sky.com/
-exec --no-startup-id google-chrome-stable --app https://coinbase.com
+exec --no-startup-id google-chrome-stable --app https://google.com/
+exec --no-startup-id firefox
 exec --no-startup-id code
