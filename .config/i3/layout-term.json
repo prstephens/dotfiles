@@ -1,0 +1,111 @@
+
+
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 314,
+       "width": 496,
+       "x": 0,
+       "y": 0
+    },
+    "name": "paul@archpc: ~",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^Termite$",
+        "instance": "^termite$",
+        "title": "^paul\\@archpc\\:\\ \\~$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 314,
+               "width": 496,
+               "x": 0,
+               "y": 0
+            },
+            "name": "paul@archpc: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Termite$",
+               "instance": "^termite$",
+                "title": "matrix"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // splith split container with 2 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 314,
+                       "width": 496,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "paul@archpc: ~",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Termite$",
+                        "instance": "^termite$",
+                        "title": "vtop"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 314,
+                       "width": 496,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "paul@archpc: ~",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Termite$",
+                        "instance": "^termite$",
+                        "title": "neo"
+                       }
+                    ],
+                    "type": "con"
+                }
+                
+            ]
+        }
+    ]
+}
+
+

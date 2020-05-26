@@ -142,5 +142,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-neofetch --size 300
+
 alias dotfiles='/usr/bin/git --git-dir=/home/paul/dotfiles/ --work-tree=/home/paul'
