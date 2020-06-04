@@ -215,17 +215,17 @@ for_window [title=".*YouTube.*"] move to workspace $ws6
 
 
 # load programs
-exec --no-startup-id spotify
+#exec --no-startup-id spotify
 exec --no-startup-id google-chrome-stable --app https://gmail.com
 exec --no-startup-id google-chrome-stable --app https://google.com/
 exec --no-startup-id code
 exec --no-startup-id surf https://youtube.com
 exec --no-startup-id surf https://web.whatsapp.com
 
-exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout $HOME/.config/i3/layout-term.json'"
+exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout /home/paul/.config/i3/layout-term.json'"
 exec --no-startup-id termite 
-exec --no-startup-id termite -e ~/matrix
-exec --no-startup-id termite -e ~/neo
+exec --no-startup-id termite -e /home/paul/.config/i3/scripts/matrix
+exec --no-startup-id termite -e /home/paul/.config/i3/scripts/neo
 exec --no-startup-id termite -e vtop
 
 #exec --no-startup-id "i3-msg restart"

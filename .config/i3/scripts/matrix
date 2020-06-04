@@ -1,0 +1,2 @@
+#!/bin/sh
+unimatrix -c magenta -a -f -s 94 -l m
