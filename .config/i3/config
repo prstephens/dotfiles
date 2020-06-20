@@ -196,7 +196,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
 # load config
-#58090
+#
 exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/anime/1275086.jpg
 exec_always --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 240
 exec  --no-startup-id xscreensaver -no-splash

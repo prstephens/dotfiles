@@ -40,4 +40,4 @@ color7  = #cfcfcf
 color15 = #ffffff
 
 [options]
-font = Hack 8
+#font = Hack 8
