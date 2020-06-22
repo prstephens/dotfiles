@@ -106,12 +106,12 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 term"
-set $ws2 "2 web"
-set $ws3 "3 code"
-set $ws4 "4 music"
-set $ws5 "5 chat"
-set $ws6 "6 youtube"
-set $ws7 "7"
+set $ws2 "2 mail"
+set $ws3 "3 web"
+set $ws4 "4 code"
+set $ws5 "5 music"
+set $ws6 "6 chat"
+set $ws7 "7 youtube"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -205,22 +205,23 @@ exec_always --no-startup-id setxkbmap -layout gb
 
 # assign apps to workspaces
 # run : xprop | grep -i 'class' to get class name of window
-assign [class="Google-chrome"] $ws2
-assign [class="firefox"] $ws2
-assign [class="code-oss"] $ws3
-assign [class="spotify"] $ws4
-for_window [title=".*Spotify.*"] move window to $ws4
-for_window [title=".*WhatsApp.*"] move to workspace $ws5
-for_window [title=".*YouTube.*"] move to workspace $ws6
+for_window [title=".*Gmail.*"] move to workspace $ws2
+assign [class="Google-chrome"] $ws3
+assign [class="firefox"] $ws3
+assign [class="code-oss"] $ws4
+assign [class="spotify"] $ws5
+for_window [title=".*Spotify.*"] move window to $ws5
+for_window [title=".*WhatsApp.*"] move to workspace $ws6
+for_window [title=".*YouTube.*"] move to workspace $ws7
 
 
 # load programs
 #exec --no-startup-id spotify
-exec --no-startup-id google-chrome-stable --app https://gmail.com
 exec --no-startup-id google-chrome-stable --app https://google.com/
 exec --no-startup-id code
 exec --no-startup-id surf https://youtube.com
 exec --no-startup-id surf https://web.whatsapp.com
+exec --no-startup-id surf https://mail.google.com
 
 exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout /home/paul/.config/i3/layout-term.json'"
 exec --no-startup-id termite 

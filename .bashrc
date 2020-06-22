@@ -77,7 +77,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='lsd --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -94,9 +94,9 @@ bu() { cp "$@" "$@.backup-`date +%s`"; echo "`date +%Y-%m-%d` backed up $PWD/$@"
 colortail() { tail -500 $*|ccze -A; }
 
 # some more ls aliases
-alias ll='ls -alh'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='lsd -alh'
+alias la='lsd -A'
+alias l='lsd -CF'
 alias c='clear'
 alias nano='sudo nano'
 
