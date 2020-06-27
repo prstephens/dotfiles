@@ -15,8 +15,8 @@
     "percent": 0.5,
     "swallows": [
        {
-        "class": "^Termite$",
-        "instance": "^termite$",
+        "class": "^URxvt$",
+        "instance": "^urxvt$",
         "title": "^paul\\@archpc\\:\\ \\~$"
        }
     ],
@@ -45,8 +45,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^Termite$",
-               "instance": "^termite$",
+                "class": "^URxvt$",
+               "instance": "^urxvt$",
                 "title": "matrix"
                }
             ],
@@ -74,8 +74,8 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                        "class": "^Termite$",
-                        "instance": "^termite$",
+                        "class": "^URxvt$",
+                        "instance": "^urxvt$",
                         "title": "vtop"
                        }
                     ],
@@ -95,8 +95,8 @@
                     "percent": 0.5,
                     "swallows": [
                        {
-                        "class": "^Termite$",
-                        "instance": "^termite$",
+                        "class": "^URxvt$",
+                        "instance": "^urxvt$",
                         "title": "neo"
                        }
                     ],
