@@ -37,7 +37,7 @@
 
 ! URxvt SETTINGS
 URxvt.depth: 32
-URxvt.background: [85]#011627
+URxvt.background: #011627
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
 URxvt.internalBorder: 15
