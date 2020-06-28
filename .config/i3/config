@@ -181,7 +181,7 @@ new_window pixel 2
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
 client.background	      $background
-client.focused         	$background $background $foreground $color4     $background
+client.focused         	$color11 $color13 $foreground $color11     $color11
 client.unfocused       	$background	$background	$foreground	$background	$background
 client.focused_inactive	$background	$background	$foreground	$background	$background
 client.urgent		        $color9   	$background	$foreground	$color1   	$background

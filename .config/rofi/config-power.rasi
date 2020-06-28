@@ -1,32 +1,22 @@
 configuration {
-  lines: 6;
   location: 0;
-  yoffset: 54;
-  xoffset: 9;
   show-icons: true;
-  font: "SF Display Pro 12";
-  columns: 1;
-  bw: 0;
-  hide-scrollbar: true;
-  display-drun: "";
-  display-combi: "";
+  font: "Iosevka Nerd Font 20";
+  fullscreen: true;
 }
 
 * {
-  background-color: #c9ddfc;
-  text-color: #011627;
-  spacing: 0;
+  background-color: transparent;
 }
 
 #window {
-  padding: 20px;
-  background-color: rgba(1,22,39,0.7);
-  border-radius: 7px;
+  padding: 300px 700px;
+  background-color: rgba(201,221,252,0.9);
 }
 
 #mainbox {
-  border-radius: 7px;
-  background-color: #011627;
+  background-color: transparent;
+  width: 200px;
 }
 
 inputbar {

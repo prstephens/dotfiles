@@ -40,7 +40,7 @@ URxvt.depth: 32
 URxvt.background: [85]#011627
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
-URxvt.internalBorder: 10
+URxvt.internalBorder: 15
 URxvt.clipboard.autocopy: true
 URxvt.keysym.Control-Shift-V: perl:pasta:paste
 URxvt.perl-ext-common: selection-to-clipboard,pasta
