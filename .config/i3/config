@@ -190,7 +190,7 @@ client.placeholder	    $background	$background	$foreground	$background	$backgrou
 #load pretty stuff
 #exec_always --no-startup-id conky
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
+exec_always --no-startup-id picom --config $HOME/.config/picom/conf --experimental-backends
 
 # load config
 #
