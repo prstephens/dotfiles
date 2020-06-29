@@ -14,5 +14,6 @@ polybar power -c ~/.config/polybar/config.ini &\
 polybar datetime -c ~/.config/polybar/config.ini &\
 polybar launch -c ~/.config/polybar/config.ini &\
 polybar workspaces -c ~/.config/polybar/config.ini &\
+polybar system -c ~/.config/polybar/config.ini &\
 polybar spacer -c ~/.config/polybar/config.ini &\
 
