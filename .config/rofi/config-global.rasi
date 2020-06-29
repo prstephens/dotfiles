@@ -8,8 +8,8 @@ configuration {
   columns: 1;
   bw: 0;
   hide-scrollbar: true;
-  display-drun: "";
-  display-combi: "";
+  display-drun: "";
+  display-combi: "";
 }
 
 * {

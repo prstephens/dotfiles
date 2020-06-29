@@ -6,8 +6,8 @@ configuration {
   columns: 6;
   bw: 0;
   hide-scrollbar: true;
-  display-drun: "";
-  display-combi: "";
+  display-drun: "";
+  display-combi: "";
 }
 
 * {
