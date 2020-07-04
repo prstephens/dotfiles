@@ -146,7 +146,7 @@ fi
 alias dotfiles='/usr/bin/git --git-dir=/home/paul/dotfiles/ --work-tree=/home/paul'
 alias d='dotfiles'
 alias dfa='dotfiles add'
-alias dcm='dotfiles commit'
+alias dfc='dotfiles commit'
 alias dfp='dotfiles push'
 
 alias systemctl='sudo systemctl'
