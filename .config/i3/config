@@ -173,22 +173,22 @@ bindsym $mod+r mode "resize"
 
 gaps inner 25
 gaps outer -15
-default_border pixel 5
+default_border pixel 2
 default_floating_border pixel 3
 smart_borders on
 
 client.background	      $background
-client.focused         	$background $background $foreground $color4     $background
+client.focused         	$background $background $foreground $color2     $background
 client.unfocused       	$background	$background	$foreground	$background	$background
 client.focused_inactive	$background	$background	$foreground	$background	$background
 client.urgent		        $color9   	$background	$foreground	$color1   	$background
 client.placeholder	    $background	$background	$foreground	$background	$background
-for_window [class="^.*"] border pixel 0
-for_window [class="."] focus
+#for_window [class="^.*"] border pixel 0
+#for_window [class="."] focus
 
 
 #load pretty stuff
-#exec_always --no-startup-id conky
+#
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config $HOME/.config/picom/conf --experimental-backends
 
@@ -202,6 +202,7 @@ exec_always --no-startup-id setxkbmap -layout gb
 
 # assign apps to workspaces
 # run : xprop | grep -i 'class' to get class name of window
+#
 for_window [title=".*Gmail.*"] move to workspace $ws2
 assign [class="Google-chrome"] $ws3
 assign [class="firefox"] $ws3
@@ -213,6 +214,7 @@ for_window [title=".*YouTube.*"] move to workspace $ws7
 
 
 # load programs
+#
 #exec --no-startup-id spotify
 exec --no-startup-id google-chrome-stable --app https://google.com/
 exec --no-startup-id code

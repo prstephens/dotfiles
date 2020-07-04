@@ -26,12 +26,13 @@ shadow-exclude = [
 
 # OPACITY
 inactive-opacity = 0.95;
-active-opacity = 0.85;
-frame-opacity = 0.95;
+active-opacity = 1;
+frame-opacity = 1;
 inactive-opacity-override = false;
 blur-background-fixed = false;
 blur-background-exclude = [
     "class_g = 'Polybar'",
+    "class_g = 'youtube.com'",
     "window_type = 'dock'",
     "window_type = 'desktop'"
 ];
