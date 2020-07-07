@@ -1,5 +1,5 @@
 configuration {
-  lines: 6;
+  lines: 10;
   location: 0;
   yoffset: 54;
   xoffset: 9;
@@ -13,7 +13,7 @@ configuration {
 }
 
 * {
-  background-color: #c9ddfc;
+  background-color: rgba(201,221,252,0.7);
   text-color: #011627;
   spacing: 0;
 }

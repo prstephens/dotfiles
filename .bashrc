@@ -148,6 +148,8 @@ alias d='dotfiles'
 alias dfa='dotfiles add'
 alias dfc='dotfiles commit'
 alias dfp='dotfiles push'
+alias dfs='dotfiles status'
+
 
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman'
