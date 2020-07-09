@@ -1,0 +1,23 @@
+[bar/datetime]
+width = 233
+height = ${vars.size}
+offset-y = ${vars.offset}
+offset-x = 100%:-285
+fixed-center = true
+module-margin-right = 2
+background = ${colors.8a}
+override-redirect = true
+modules-center = date time
+font-0 = "SF Display Pro:size=12;2"
+
+[module/date]
+type=custom/script
+interval=60.0
+exec=date +"%{T3}󰸗 %{T1} %a %d %b, %Y%{T-}"
+label-foreground=${colors.1a}
+
+[module/time]
+type=custom/script
+interval=60.0
+exec=date +"%{T2}󰅐 %{T1} %I:%M %p%{T-}"
+label-foreground=${colors.5a}

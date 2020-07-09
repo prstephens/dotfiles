@@ -1,0 +1,16 @@
+[bar/power]
+width = ${vars.size}
+height = ${vars.size}
+offset-y = ${vars.offset}
+offset-x = 100%:-40
+fixed-center = true
+font-0 = "Iosevka Nerd Font:size=16;4"
+background = ${colors.2b}
+foreground = ${colors.text}
+override-redirect = true
+modules-center = powermenu
+
+[module/powermenu]
+type=custom/text
+click-left=exec $HOME/.config/rofi/power.sh
+content="襤"

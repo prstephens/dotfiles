@@ -194,7 +194,7 @@ exec_always --no-startup-id picom --config $HOME/.config/picom/conf --experiment
 
 # load config
 #
-exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/1275086.jpg
+exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/sky.jpg
 exec_always --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 240
 exec  --no-startup-id xscreensaver -no-splash
 exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
