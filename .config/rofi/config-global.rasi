@@ -13,14 +13,14 @@ configuration {
 }
 
 * {
-  background-color: rgba(201,221,252,0.7);
+  background-color: #EDFEFE;
   text-color: #011627;
   spacing: 0;
 }
 
 #window {
   padding: 20px;
-  background-color: rgba(1,22,39,0.7);
+  background-color: rgba(237, 254, 254,0.7);
   border-radius: 7px;
 }
 

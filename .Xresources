@@ -42,13 +42,18 @@
 
 ! URxvt SETTINGS
 URxvt.depth: 32
-URxvt.background: #011627
+URxvt.background: pallete0
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
 URxvt.internalBorder: 20
 URxvt.clipboard.autocopy: true
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
+
+URxvt.urlLauncher:                google-chrome-stable
+URxvt.underlineURLs:              true
+URxvt.urlButton:                  1
+
 URxvt.keysym.Control-Shift-V: perl:pasta:paste
 URxvt.perl-ext-common: selection-to-clipboard,pasta
 URxvt.font: xft:Source Code Pro:size=12:antialias=true
