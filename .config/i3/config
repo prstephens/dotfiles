@@ -194,11 +194,12 @@ exec_always --no-startup-id picom --config $HOME/.config/picom/conf --experiment
 
 # load config
 #
-exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/sky.jpg
 exec_always --no-startup-id xrandr --output DP-4 --mode 1920x1080 --rate 240
-exec  --no-startup-id xscreensaver -no-splash
-exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
+exec_always --no-startup-id feh --bg-scale /home/paul/Pictures/wallpaper/sky.jpg
+exec --no-startup-id xscreensaver -no-splash
+exec --no-startup-id bluetoothctl power on && bluetoothctl pair 00:15:83:FC:02:45
 exec_always --no-startup-id setxkbmap -layout gb
+exec_always --no-startup-id echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
 
 # assign apps to workspaces
 # run : xprop | grep -i 'class' to get class name of window
@@ -222,8 +223,16 @@ exec --no-startup-id google-chrome-stable --new-window --app=https://youtube.com
 exec --no-startup-id google-chrome-stable --new-window --app=https://web.whatsapp.com
 exec --no-startup-id google-chrome-stable --new-window --app=https://mail.google.com
 
-exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout /home/paul/.config/i3/layout-term.json'"
+#exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout /home/paul/.config/i3/layout-term.json'"
+exec --no-startup-id "i3-msg 'workspace \"1 term\"; append_layout /home/paul/.config/i3/workspace-1.json'"
+
 exec --no-startup-id urxvt 
-exec --no-startup-id urxvt -e $HOME/.config/i3/scripts/matrix
-exec --no-startup-id urxvt -e $HOME/.config/i3/scripts/neo
-exec --no-startup-id urxvt -e vtop
+exec --no-startup-id urxvt 
+exec --no-startup-id urxvt 
+exec --no-startup-id urxvt 
+exec --no-startup-id urxvt 
+exec --no-startup-id urxvt 
+
+#exec --no-startup-id urxvt -e $HOME/.config/i3/scripts/matrix
+#exec --no-startup-id urxvt -e $HOME/.config/i3/scripts/neo
+#exec --no-startup-id urxvt -e vtop

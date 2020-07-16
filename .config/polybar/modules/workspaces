@@ -1,16 +1,20 @@
 [bar/workspaces]
-height = ${vars.size}
-width = 300
+height = 40
+width = 340
 offset-y = ${vars.offset}
-offset-x = 50
+offset-x = 10
 fixed-center = true
-background = ${colors.bg}
+background = ${colors.8a}
 foreground = ${colors.text}
 override-redirect = true
 font-0 = "Iosevka Nerd Font:size=16;4"
 font-1 = "SF Display Pro:size=12;2"
-modules-center = ws-term ws-mail ws-web ws-code ws-music ws-chat ws-youtube
+modules-center = spacer1 spacer1 ws-term ws-mail ws-web ws-code ws-music ws-chat ws-youtube
+bottom = true
 
+[module/spacer1]
+type=custom/text
+content=" "
 
 [module/ws-term]
 type=custom/text

@@ -2,8 +2,8 @@
 include-file = /home/$USER/.config/polybar/colours
 
 ; Import bar modules
-include-file = /home/$USER/.config/polybar/modules/power
 include-file = /home/$USER/.config/polybar/modules/datetime
+include-file = /home/$USER/.config/polybar/modules/power
 include-file = /home/$USER/.config/polybar/modules/launch
 include-file = /home/$USER/.config/polybar/modules/workspaces
 
@@ -12,8 +12,8 @@ include-file = /home/$USER/.config/polybar/modules/workspaces
 
 [vars]
 size = 30
-spacer = 45
-offset = 10
+spacer = 48
+offset = 8
 
 [bar/spacer]
 height = ${vars.spacer}
@@ -21,6 +21,7 @@ width = 100%
 background = #00000000
 modules-center = spacer
 font-0 = "SF Display Pro:size=12;2"
+bottom = true
 
 [module/spacer]
 type=custom/text
@@ -29,7 +30,7 @@ content=" "
 
 
 [bar/system]
-height = ${vars.size}
+height = 40
 width = 250
 offset-y = ${vars.offset}
 offset-x = 100%:-550
@@ -40,6 +41,7 @@ override-redirect = true
 modules-center = updates-aurhelper alsa vpn-openvpn-status 
 font-0 = "SF Display Pro:size=12;2"
 font-1 = "Iosevka Nerd Font:size=16;4"
+bottom = true
 
 
 [module/updates-aurhelper]

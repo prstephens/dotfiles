@@ -5,7 +5,7 @@ glx-copy-from-front = false;
 glx-no-rebind-pixmap = true;
 
 # RADIUS
-corner-radius = 7;
+corner-radius = 15;
 rounded-corners = [
     "name = 'polybar'",
 ]

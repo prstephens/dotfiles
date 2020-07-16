@@ -11,7 +11,7 @@ configuration {
 
 #window {
   padding: 300px 700px;
-  background-color: rgba(237, 254, 254,0.9);
+  background-color: rgba(237, 254, 254,0.5);
 }
 
 #mainbox {
@@ -51,5 +51,6 @@ element {
 }
 
 element selected {
-  background-color: #bfd2ef;
+  border: 2;
+  background-color: #D8A6F4;
 }
