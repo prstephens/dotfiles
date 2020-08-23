@@ -108,7 +108,6 @@ alias ps='ps -elf | grep'
 alias in='yay -S'
 alias nocomment='sudo grep -Ev '\''^(#|$)'\'''
 alias firewall='sudo iptables -L -n -v --line-numbers'
-alias startup="sudo chkconfig --list | grep $(runlevel | awk '{ print $2}'):on"
 alias eb="sudo nano ~/.bashrc"
 alias loadbash=". ~/.bashrc"
 alias ct='colortail'
@@ -143,7 +142,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 
-alias dotfiles='/usr/bin/git --git-dir=/home/paul/dotfiles/ --work-tree=/home/paul'
+alias dotfiles='/usr/bin/git --git-dir=/home/paul/.dotfiles/ --work-tree=/home/paul'
 alias d='dotfiles'
 alias dfa='dotfiles add'
 alias dfc='dotfiles commit'
